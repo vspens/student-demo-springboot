@@ -17,7 +17,7 @@ public class StudentController {
     @Autowired
     StudentService studentService;
 
-    @GetMapping("/list")
+    @GetMapping("/lists")
     public List<Student> list() {
         return studentService.getStudents();
     }
